@@ -43,7 +43,7 @@ class MovieManager:
         if 'release_year' in updates:
             try:
                 year = int(updates['release_year'])
-                if not 1888 <= year <= 2024:
+                if not 1900 <= year <= 2026:
                     return False, "Invalid release year"
                 movie.release_year = year
             except ValueError:
